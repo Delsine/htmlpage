@@ -1,0 +1,42 @@
+body {
+  background-image: url("test3.JPG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0%;
+  padding: 0;
+  overflow: hidden;       
+        }
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+h2 {
+  color:rgb(0, 0, 0);
+  text-align: left;
+  font-family: Verdana;
+  font-size: large;
+}
+
+h3 {
+  color:rgb(0, 0, 0);
+  text-align: left;
+  font-family: Verdana;
+  font-size: large;
+}
+
+h4 {
+  color:rgb(0, 0, 0);
+  text-align: left;
+  font-family: Verdana;
+  font-size: small;
+}
+
+#one{
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-family: verdana;
+  font-size: 20;
+}

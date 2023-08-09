@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delsine's HTML Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><strong>Welkom op mijn eerste HTML pagina</strong></h1>
+  <h2>About me:</h2>
+     <p id="one">Hier zou ik iets over mezelf schrijven als ik creatief genoeg zou zijn om iets leuks te bedenken. Maar helaas is het niet zo'n feest en moeten we het doen met deze placeholder tekst. 
+        <br /><br /></p>
+        
+  <h2>And now for something completely different:</h2>
+
+  <h4>2 Columns</h4>
+      <div class="row">
+        <div class="column">
+         <p><strong>I can count! (I don't have a better use case for the While Loop at the moment)</strong></p>
+         <p id="count"></p>
+         </div>
+         <script>
+            let text = "";
+            let i = 1;
+            while (i < 13) {
+              text += "<br>See? I can go to " + i;
+              i++;
+            }
+            document.getElementById("count").innerHTML = text;
+            </script>
+        <br />
+        <div class="column">
+         <p><strong>Here's the time & date when you accessed the page:</strong></p>
+         <p id="date"></p>
+   <script>
+      const d = new Date();
+      document.getElementById("date").innerHTML = d;
+      </script>
+      <p><strong>VS the live time & date:</strong></p>
+              <script> 
+               function display_c(){
+               var refresh=1000;
+               mytime=setTimeout('display_ct()',refresh)
+               }
+               
+               function display_ct() {
+               var x = new Date()
+               document.getElementById('ct').innerHTML = x;
+               display_c();
+                }
+               </script>
+               <body onload=display_ct();>
+                  <span id='ct' ></span>
+      </div>
+  <style>
+   * {
+     box-sizing: border-box;
+   }
+   
+   .column {
+     float: left;
+     width: 50%;
+     padding: 10px;
+     height: 300px;
+   }
+   
+   .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   </style>
+   </head>
+  <h2>For more interactive stuff, here's some audio:</h2>
+
+  <p><strong>Ghost Writer:</strong></p>
+  <p id="mydiv">Soul Searching <br />
+        <audio controls id="AP1">
+        <source src="SS1.mp3" type="audio/mpeg">
+        </audio>
+        <br /><br /><br />
+
+        Talk About It <br />
+        <audio controls id="AP1">
+        <source src="TaI3.mp3" type="audio/mpeg">
+        </audio>
+        <br /><br /><br />
+
+        Umbrella <br />
+        <audio controls id=AP1>
+        <source src="U2.mp3" type="audio/mpeg">
+        </audio></p>
+        <br /><br /><br />
+
+      <p><strong>Riptide:</strong></p>
+     <p id="mydiv2">Turn Back time <br />
+        <audio controls id="AP1">
+        <source src="TBT2.mp3" type="audio/mpeg">
+         </audio>
+         <br /><br /><br />
+    
+         Alexis <br />
+        <audio controls id="AP1">
+        <source src="A1.mp3" type="audio/mpeg">
+        </audio>
+        <br /><br /><br />
+    
+         Maybe Secretly <br />
+        <audio controls id=AP1>
+        <source src="MS3.mp3" type="audio/mpeg">
+        </audio></p>
+        <br /><br /><br />
+
+</body>
+</html>
